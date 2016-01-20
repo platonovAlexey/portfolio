@@ -53,14 +53,29 @@ body {
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
 }
 
 .layout_center_wrapper{
 	position: relative;
 	min-height: 100%;
-	margin: 0 auto;
 	overflow: hidden;
+
+	/*&:after{
+		content: " ";
+		display: block;
+		height: 61px;
+		position: relative;
+		background-color: red;
+	}*/
 }
+
 
 .header{
 	background:#ccc url(/img/header_bg.jpg)repeat;
@@ -107,14 +122,24 @@ body {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	background-color: #ffffff;
 background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
-background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
-background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
-background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
+background:#ffffff -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
+background:#ffffff -o-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
+background:#ffffff -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
+background:#ffffff  linear-gradient(0deg, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
 box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
 
+	.footer__login_link{
+			color:#9c9c9c;
+			font-weight: bold;
+			font-size: 0.875em;
+			line-height: 3.813em;
+			text-transform: uppercase;
+			text-decoration: none;
+			float: left;
+			margin-left: 170px;
+
+		}
 	.footer__copyright{
 		text-align: center;
 		font-size: 0.750em;

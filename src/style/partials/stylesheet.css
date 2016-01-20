@@ -133,9 +133,25 @@
 }
 
 .ico-locked {
-    width: 19px;
+    width: 25px;
     height: 22px;
     background-position: -1157px -6px;
+    float: left;
+    position: relative;
+    top: 15px;
+    left: -5px;
+}
+
+.ico-locked:hover{
+    width: 25px;
+    height: 22px;
+    background-position: -1547px -6px;
+}
+
+.ico-unlocked {
+    width: 24px;
+    height: 22px;
+    background-position: -1547px -6px;
 }
 
 .ico-php {
@@ -178,11 +194,7 @@
     background-position: -1493px -9px;
 }
 
-.ico-unlocked {
-    width: 24px;
-    height: 22px;
-    background-position: -1547px -6px;
-}
+
 
 .ico-vk {
     width: 38px;
