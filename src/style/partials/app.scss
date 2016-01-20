@@ -134,16 +134,18 @@ body {
 .navigation{
 	float: left;
 	max-width: 250px;
-	width: 100%;
-
+	width: 26%;
+	margin-right: 6%;
 }
 
 .nav{
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 	width: 100%;
 
 		.nav__list{
 			padding-left: 0;
+			margin-top: 0;
+			margin-bottom: 0px;
 
 			.nav__item{
 				background: -webkit-linear-gradient(90deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
@@ -223,6 +225,8 @@ body {
 
 .contacts{
 	position: relative;
+	max-width: 250px;
+	width: 100%;
 		.contacts__title{
 		background-image: -webkit-linear-gradient(left, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
 		background-image: -webkit-linear-gradient(left, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
@@ -304,6 +308,69 @@ body {
 				}
 		}
 }
+
+.article{
+	position: relative;
+	float: left;
+	max-width: 652px;
+	width: 68%;
+
+		.article__section{
+			background: #f7f6f5;
+			background-image: -webkit-linear-gradient(#f7f6f5 0%, #f0eeed 100%);
+			background-image: -o-linear-gradient(#f7f6f5 0%, #f0eeed 100%);
+			background-image: linear-gradient(#f7f6f5 0%, #f0eeed 100%);
+			background-image: -webkit-linear-gradient(#f7f6f5 0%, #f0eeed 100%);
+			background-image: -o-linear-gradient(#f7f6f5 0%, #f0eeed 100%);
+			background-image: linear-gradient(#f7f6f5 0%, #f0eeed 100%);
+			background: linear-gradient(#f7f6f5 0%, #f0eeed 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f6f5', endColorstr='#f0eeed',GradientType=0 );
+			border-radius: 4px;
+			margin-bottom: 38px;
+			min-height: 300px;
+
+			.article__section__header{
+				background-image: -webkit-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+				background-image: -webkit-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+				background-image: -o-linear-gradient(left, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+				background-image: linear-gradient(to right, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+				background-image: linear-gradient(to right, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+				box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+				min-height: 55px;
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+
+					.article__section__header__title{
+						margin: 0px;
+						padding: 0px;
+						font-size: 24px;
+						font-family: "OpenSans-Semibold";
+						color: rgb(238, 237, 236);
+						line-height: 220%;
+						text-align: left;
+						text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
+						margin-left: 42px;
+					}
+			}
+
+			.article__section__content{
+				padding: 39px 39px 34px 32px;
+
+					.article__section__content__photo{
+						width: 155px;
+						height: 155px;
+						background-color: tomato;
+						float: left;
+						margin-right: 35px;
+					}
+
+					.article__section__content__info{
+						float: left;
+					}
+			}
+		}
+}
+
 
 .footer{
 	min-height: 61px;
