@@ -46,7 +46,7 @@ var config = {
     tunnel: true,
     host: 'localhost',
     port: 9000,
-    logPrefix: "Frontend_Devil"
+    logPrefix: "NEviL"
 };
 
 gulp.task('webserver', function () {
@@ -123,7 +123,7 @@ gulp.task('watch', function(){
     watch([path.watch.style], function(event, cb) {
         setTimeout(function(){
             gulp.start('style:build');
-        }, 3000);
+        }, 5000);
     });
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
