@@ -1,0 +1,79 @@
+//= template/header.html
+
+//= template/header-content.html
+
+
+<main class="main-content clearfix">
+	<div class="container">
+		<div class="navigation">
+			<nav class="nav">
+			<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__link">Обо мне</a></li>
+					<li class="nav__item"><a href="work.html" class="nav__link">Мои Работы</a></li>
+					<li class="nav__item nav__item--active"><a href="feedback.html" class="nav__link nav__link--active">Обратная связь</a></li>
+				</ul>
+			</nav>
+
+			<section class="contacts">
+				<div class="contacts__title">
+					Контакты
+				</div>
+				<div class="contacts__item">
+					<img src="img/email.png" alt="kalyawe4ka@gmail.com" class="contacts__item--icon">
+					<a href="mailto:kalyawe4ka@gmail.com" class="contacts__item__link">kalyawe4ka@gmail.com</a>
+				</div>
+				<div class="contacts__item">
+					<img src="img/telephone.png" alt="++79069999999" class="contacts__item--icon">
+					<a href="tel:++79069999999" class="contacts__item__link">+79069999999</a>
+				</div>
+				<div class="contacts__item">
+					<img src="img/skype.png" alt="nevil_poker" class="contacts__item--icon">
+					<a href="skype:nevil_poker" class="contacts__item__link">nevil_poker</a>
+				</div>
+			</section>
+		</div>
+
+		<article class="article">
+			<section class="article__section clearfix">
+				<div class="article__section__header">
+					<h2 class="article__section__header__title">У вас интересный проект? Напишите мне</h2>
+				</div>
+				<div class="article__section__content clearfix">
+					<div class="feedback__wrap clearfix">
+						<form action="" method="POST" name="form__feedback" class="feedback__form" id="feedback__form">
+							<div class="feedback__name">
+								<label class="feedback__name__label">Имя</label>
+								<input type="text" name="name" placeholder="Как к Вам обращаться" class="feedback__name__input">
+							</div>
+							<div class="feedback__email">
+								<label class="feedback__email__label">Email</label>
+								<input type="text" name="email" placeholder="Куда мне писать" class="feedback__email__input">
+							</div>
+							<div class="feedback__textarea__wrap">
+								<label class="feedback__textarea__label">Сообщение</label>
+								<textarea class="feedback__textarea" placeholder="Кратко, в чем суть" name="textarea" cols="30" rows="10"></textarea>
+							</div>
+							<div class="feedback__captcha__wrap">
+								<label class="feedback__captcha__label">Введите код, указанный на картинке</label>
+								<div class="captcha__block"></div>
+								<input type="text" name="captcha" placeholder="Введите код" class="feedback__captcha__input">
+							</div>
+							<div class="feedback__buttons clearfix">
+								<input type="submit" class="feedback__buttons__send" name="submit" value="Отправить">
+								<input type="reset" class="feedback__buttons__clean" name="reset" value="Очистить">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+
+		</article>
+<div class="clearfix"></div>
+	</div>
+</main>
+
+
+//= template/footer-content.html
+
+//= template/footer.html
