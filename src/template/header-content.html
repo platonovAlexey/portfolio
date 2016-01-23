@@ -1,3 +1,61 @@
+<!--[if lte IE 8]>
+<style type="text/css">
+
+	.clearfix::before,
+	.clearfix::after {
+	  content: "";
+	  display: table;
+	}
+	.clearfix::after {
+	  clear: both;
+	}
+
+	.exp__block:after{
+		clear:both;
+}
+
+header{
+	position:relative;
+}
+
+header:after{
+	content: "";
+	display: block;
+	background-color: #fff;
+	height: 7px;
+
+}
+
+.work__wrapper{
+	padding-left:18px;
+}
+
+.work__item{
+	margin-right:20px;
+}
+
+.caption{
+	background-image: url('../img/transparet-ie.png');
+	background-repeat:repeat;
+}
+
+.exp__block:after{
+	content: '';
+	background-color:#ccc;
+	height: 1px;
+	display: block;
+	width: 100%;
+	position: relative;
+	top: 20px;
+}
+
+.footer{
+	clear:both;
+}
+
+</style>
+<![endif]-->
+
 <header class="header clearfix">
 		<div class="container__wide">
 			<div class="logo">
