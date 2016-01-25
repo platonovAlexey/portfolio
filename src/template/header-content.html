@@ -49,8 +49,70 @@ header:after{
 	top: 20px;
 }
 
+.nav__link{
+	border-bottom:1px solid #ccc;
+}
+
+.nav__link:last-child{
+	border-bottom:0;
+}
+
+.layout_center_wrapper{
+	min-width: 1024px;
+}
+
+.layout_center_wrapper:after{
+	content:" ";
+	display: block;
+	height: 61px;
+}
+
 .footer{
-	clear:both;
+	padding-bottom:0;
+	box-sizing:border-box;
+	height:61px;
+	min-height:inherit;
+}
+
+.feedback__buttons__send:hover{
+	color:#fff;
+}
+
+body{
+	background: #506175;
+}
+
+.info__photo{
+	float: left;
+}
+
+.info__wrap{
+	float: left;
+}
+
+.info__list__item__title{
+	line-height:1.5 !important;
+}
+
+
+.info__list__title__child{
+	float:none !important;
+	display: inline-block !important;
+}
+
+.contacts__description:before{
+	position: absolute;
+    content: ' ';
+    display: block;
+    background: url(../img/spritesheet.png) -113px -7px no-repeat;
+    width: 10px;
+    height: 38px;
+    left: -25px;
+    top: 0% !important;
+}
+
+.contacts__icon{
+	top:25% !important;
 }
 
 </style>
@@ -65,16 +127,17 @@ header:after{
 			</div>
 			<ul class="social">
 				<li class="social__item">
-					<a href="https://www.facebook.com" target="_blank" class="social__link"><i class="ico ico-fb"></i></a>
+					<a href="https://www.facebook.com" target="_blank" class="social__link ico ico-fb">
+					facebook</a>
 				</li>
 				<li class="social__item">
-					<a href="https://vk.com/sovpadenie_ne_dumau" target="_blank" class="social__link"><i class="ico ico-vk"></i></a>
+					<a href="https://vk.com/sovpadenie_ne_dumau" target="_blank" class="social__link ico ico-vk">Вконтакте</a>
 				</li>
 				<li class="social__item">
-					<a href="https://twitter.com/" target="_blank" class="social__link"><i class="ico ico-twitter"></i></a>
+					<a href="https://twitter.com/" target="_blank" class="social__link ico ico-twitter">Twitter</a>
 				</li>
 				<li class="social__item">
-					<a href="https://github.com/platonovAlexey" target="_blank" class="social__link"><i class="ico ico-github"></i></a>
+					<a href="https://github.com/platonovAlexey" target="_blank" class="social__link ico ico-github">Github</a>
 				</li>
 			</ul>
 		</div>

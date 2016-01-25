@@ -1,223 +1,223 @@
 .ico {
-    background-image: url(/img/spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+	background-image: url(/img/spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
 }
 
 .ico-angular {
-    width: 72px;
-    height: 25px;
-    background-position: -6px -6px;
+	width: 72px;
+	height: 25px;
+	background-position: -6px -6px;
 }
 
 .ico-arr-gray {
-    width: 11px;
-    height: 40px;
-    background-position: -90px -6px;
+	width: 11px;
+	height: 40px;
+	background-position: -90px -6px;
 }
 
 .ico-arr-orange {
-    width: 10px;
-    height: 38px;
-    background-position: -113px -6px;
+	width: 10px;
+	height: 38px;
+	background-position: -113px -6px;
 }
 
 .ico-cancel {
-    width: 45px;
-    height: 33px;
-    background-position: -135px -6px;
+	width: 45px;
+	height: 33px;
+	background-position: -135px -6px;
 }
 
 .ico-cancel:hover {
-    background-position: -192px -6px;
+	background-position: -192px -6px;
 }
 
 .ico-case {
-    width: 54px;
-    height: 55px;
-    background-position: -249px -6px;
-    float: left;
-    margin-right: 44px;
+	width: 54px;
+	height: 55px;
+	background-position: -249px -6px;
+	float: left;
+	margin-right: 44px;
 }
 
 .ico-checkbox-bkg {
-    width: 22px;
-    height: 22px;
-    background-position: -315px -6px;
+	width: 22px;
+	height: 22px;
+	background-position: -315px -6px;
 }
 
 .ico-checkmark-ok {
-    width: 21px;
-    height: 21px;
-    background-position: -349px -6px;
+	width: 21px;
+	height: 21px;
+	background-position: -349px -6px;
 }
 
 .ico-css {
-    width: 44px;
-    height: 25px;
-    background-position: -382px -6px;
+	width: 44px;
+	height: 25px;
+	background-position: -382px -6px;
 }
 
 .ico-diploma {
-    width: 54px;
-    height: 55px;
-    background-position: -438px -6px;
-    float: left;
-    margin-right: 44px;
+	width: 54px;
+	height: 55px;
+	background-position: -438px -6px;
+	float: left;
+	margin-right: 44px;
 }
 
 .ico-email {
-    width: 17px;
-    height: 13px;
-    background-position: -504px -6px;
+	width: 17px;
+	height: 13px;
+	background-position: -504px -6px;
 }
 
 .ico-email-gray {
-    width: 23px;
-    height: 17px;
-    background-position: -533px -6px;
+	width: 23px;
+	height: 17px;
+	background-position: -533px -6px;
 }
 
 .ico-fb {
-    width: 42px;
-    height: 44px;
-    background-position: -568px -6px;
+	width: 42px;
+	height: 44px;
+	background-position: -568px -6px;
 }
 
 .ico-fb:hover {
-    width: 42px;
-    height: 44px;
-    background-position: -620px -9px;
+	width: 42px;
+	height: 44px;
+	background-position: -620px -9px;
 }
 
 .ico-git {
-    width: 43px;
-    height: 25px;
-    background-position: -672px -6px;
+	width: 43px;
+	height: 25px;
+	background-position: -672px -6px;
 }
 
 .ico-github {
-    width: 42px;
-    height: 44px;
-    background-position: -727px -9px;
+	width: 42px;
+	height: 44px;
+	background-position: -727px -9px;
 }
 
 .ico-github:hover {
-    background-position: -781px -9px;
+	background-position: -781px -9px;
 }
 
 .ico-graguete {
-    width: 54px;
-    height: 55px;
-    background-position: -835px -6px;
-    float: left;
-    margin-right: 44px;
+	width: 54px;
+	height: 55px;
+	background-position: -835px -6px;
+	float: left;
+	margin-right: 44px;
 }
 
 .ico-gulp {
-    width: 52px;
-    height: 25px;
-    background-position: -901px -6px;
+	width: 52px;
+	height: 25px;
+	background-position: -901px -6px;
 }
 
 .ico-html {
-    width: 53px;
-    height: 25px;
-    background-position: -965px -6px;
+	width: 53px;
+	height: 25px;
+	background-position: -965px -6px;
 }
 
 .ico-javascript {
-    width: 81px;
-    height: 25px;
-    background-position: -1030px -6px;
+	width: 81px;
+	height: 25px;
+	background-position: -1030px -6px;
 }
 
 .ico-key {
-    width: 22px;
-    height: 20px;
-    background-position: -1123px -6px;
+	width: 22px;
+	height: 20px;
+	background-position: -1123px -6px;
 }
 
 .ico-locked {
-    width: 25px;
-    height: 22px;
-    background-position: -1157px -6px;
-    float: left;
-    position: relative;
-    top:20px;
-    left: -5px;
+	width: 25px;
+	height: 22px;
+	background-position: -1157px -6px;
+	float: left;
+	position: relative;
+	top:20px;
+	left: -5px;
 }
 
 .ico-locked:hover{
-    width: 25px;
-    height: 22px;
-    background-position: -1547px -6px;
+	width: 25px;
+	height: 22px;
+	background-position: -1547px -6px;
 }
 
 .ico-unlocked {
-    width: 24px;
-    height: 22px;
-    background-position: -1547px -6px;
+	width: 24px;
+	height: 22px;
+	background-position: -1547px -6px;
 }
 
 .ico-php {
-    width: 46px;
-    height: 25px;
-    background-position: -1188px -6px;
+	width: 46px;
+	height: 25px;
+	background-position: -1188px -6px;
 }
 
 .ico-pic {
-    width: 54px;
-    height: 55px;
-    background-position: -1246px -6px;
+	width: 54px;
+	height: 55px;
+	background-position: -1246px -6px;
 }
 
 .ico-school {
-    width: 54px;
-    height: 55px;
-    background-position: -1312px -6px;
-    float: left;
-    margin-right: 44px;
+	width: 54px;
+	height: 55px;
+	background-position: -1312px -6px;
+	float: left;
+	margin-right: 44px;
 }
 
 .ico-skype {
-    width: 20px;
-    height: 20px;
-    background-position: -1378px -6px;
+	width: 20px;
+	height: 20px;
+	background-position: -1378px -6px;
 }
 
 .ico-telephone {
-    width: 17px;
-    height: 22px;
-    background-position: -1410px -6px;
+	width: 17px;
+	height: 22px;
+	background-position: -1410px -6px;
 }
 
 .ico-twitter {
-    width: 42px;
-    height: 44px;
-    background-position: -1439px -9px;
+	width: 42px;
+	height: 44px;
+	background-position: -1439px -9px;
 }
 
 .ico-twitter:hover{
-    background-position: -1493px -9px;
+	background-position: -1493px -9px;
 }
 
 
 
 .ico-vk {
-    width: 38px;
-    height: 44px;
-    background-position: -1583px -6px;
+	width: 38px;
+	height: 44px;
+	background-position: -1583px -6px;
 }
 
 .ico-vk:hover {
-    width: 38px;
-    height: 44px;
-    background-position: -1635px -9px;
+	width: 38px;
+	height: 44px;
+	background-position: -1635px -9px;
 }
 
 .ico-xml {
-    width: 47px;
-    height: 25px;
-    background-position: -1687px -6px;
+	width: 47px;
+	height: 25px;
+	background-position: -1687px -6px;
 }

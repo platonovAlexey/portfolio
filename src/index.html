@@ -6,149 +6,128 @@
 
 <main class="main-content clearfix">
 	<div class="container">
-		<div class="navigation">
-			<nav class="nav">
-			<ul class="nav__list">
-					<li class="nav__item nav__item--active"><a href="index.html" class="nav__link nav__link--active">Обо мне</a></li>
-					<li class="nav__item"><a href="work.html" class="nav__link">Мои Работы</a></li>
-					<li class="nav__item"><a href="feedback.html" class="nav__link">Обратная связь</a></li>
-				</ul>
-			</nav>
-
-			<section class="contacts">
-				<div class="contacts__title">
-					Контакты
-				</div>
-				<div class="contacts__item">
-					<img src="img/email.png" alt="kalyawe4ka@gmail.com" class="contacts__item--icon">
-					<a href="mailto:kalyawe4ka@gmail.com" class="contacts__item__link">kalyawe4ka@gmail.com</a>
-				</div>
-				<div class="contacts__item">
-					<img src="img/telephone.png" alt="++79069999999" class="contacts__item--icon">
-					<a href="tel:++79069999999" class="contacts__item__link">+79069999999</a>
-				</div>
-				<div class="contacts__item">
-					<img src="img/skype.png" alt="nevil_poker" class="contacts__item--icon">
-					<a href="skype:nevil_poker" class="contacts__item__link">nevil_poker</a>
-				</div>
-			</section>
-		</div>
+		//= template/aside-index.html
 
 		<article class="article">
 			<section class="article__section clearfix">
 				<div class="article__section__header">
-					<h2 class="article__section__header__title">Основная информация</h2>
+					<h1 class="article__section__header__title">Основная информация</h1>
 				</div>
-				<div class="article__section__content clearfix">
-						<div class="article__section__content__photo">
-							<img src="img/myphoto.jpg" alt="myphoto" class="article__section__content__photo__picture">
+				<div class="article__section__content">
+					<div class="info clearfix">
+						<div class="info__photo">
+							<div class="info__photo__border">
+								<div class="info__photo__wrap">
+									<img src="img/myphoto.jpg" alt="Me" class="info__photo__picture"/>
+								</div>
+							</div>
+						</div>
 
+						<div class="info__wrap">
+							<ul class="info__list">
+								<li class="info__list__item clearfix">
+									<span class="info__list__item__title">Меня зовут:</span>
+									<span class="info__list__title__child">Платонов Алексей Юрьевич</span>
+								</li>
+								<li class="info__list__item clearfix">
+									<span class="info__list__item__title">Мой возраст:</span>
+									<span class="info__list__title__child">24 года</span>
+								</li>
+								<li class="info__list__item clearfix">
+									<span class="info__list__item__title">Мой город:</span>
+									<span class="info__list__title__child">Тамбов, Россия</span>
+								</li>
+								<li class="info__list__item clearfix prelast">
+									<span class="info__list__item__title">Моя специализация:</span>
+									<span class="info__list__title__child">FRONTEND разработчик</span>
+								</li>
+								<li class="info__list__item clearfix">
+									<span class="info__list__item__title">Ключевые навыки:</span>
+									<span class="info__list__title__child">
+										<ul class="skills__list">
+											<li class="skills__list__item">html</li>
+											<li class="skills__list__item">css</li>
+											<li class="skills__list__item">scss</li>
+											<li class="skills__list__item">git</li>
+											<li class="skills__list__item">gulp</li>
+											<li class="skills__list__item">bower</li>
+											<li class="skills__list__item">bootstrap</li>
+											<li class="skills__list__item">javascript</li>
+											<li class="skills__list__item">jquery</li>
+										</ul>
+									</span>
+								</li>
+							</ul>
 						</div>
-						<div class="article__section__content__info">
-							<div class="content__info__block">
-								<span class="info__block__title">Меня зовут:</span>
-								<span class="info__block__item">Платонов Алексей Юрьевич</span>
-							</div>
-							<div class="content__info__block">
-								<span class="info__block__title">Мой возраст:</span>
-								<span class="info__block__item">24 года</span>
-							</div>
-							<div class="content__info__block">
-								<span class="info__block__title">Мой город:</span>
-								<span class="info__block__item">Тамбов, Россия</span>
-							</div>
-							<div class="content__info__block">
-								<span class="info__block__title">Моя специализация:</span>
-								<span class="info__block__item">FRONTEND разработчик</span>
-							</div>
-							<div class="content__info__block">
-								<span class="info__block__title info__block__title--last fll">Ключевые навыки:</span>
-								<span class="skills">
-									<span class="skills__item">html</span>
-									<span class="skills__item">CSS</span>
-									<span class="skills__item">SCSS</span>
-									<span class="skills__item">git</span>
-									<span class="skills__item">gulp</span>
-									<span class="skills__item">bower</span>
-									<span class="skills__item">javascript</span>
-									<span class="skills__item">jquery</span>
-									<span class="skills__item">Bootstrap</span>
-								</span>
-							</div>
-						</div>
-				</div>
+					</div>
+			</div>
 			</section>
-			<section class="article__section clearfix">
-				<div class="article__section__header">
-					<h2 class="article__section__header__title">Опыт работы</h2>
-				</div>
+				<section class="article__section clearfix">
+					<div class="article__section__header">
+						<h2 class="article__section__header__title">Опыт работы</h2>
+					</div>
 
-				<div class="article__section__content clearfix">
-					<div class="exp__block clearfix">
-						<i class="ico ico-case"></i>
-						<div class="exp__block__content">
-							<p class="exp__block__content__title">ООО "Ведита" - Верстальщик</p>
-							<p class="exp__block__content__item">Январь 2015 - Январь 2016</p>
+					<div class="article__section__content clearfix">
+						<div class="exp__block clearfix">
+							<i class="ico ico-case"></i>
+							<div class="exp__block__content">
+								<p class="exp__block__content__title">ООО "Ведита" - Верстальщик</p>
+								<p class="exp__block__content__item">Январь 2015 - Январь 2016</p>
+							</div>
+						</div>
+						<div class="exp__block clearfix">
+							<i class="ico ico-case"></i>
+							<div class="exp__block__content">
+								<p class="exp__block__content__title">ООО "ТКсэт" - Оператор ПК</p>
+								<p class="exp__block__content__item">Август 2014 - Август 2014</p>
+							</div>
 						</div>
 					</div>
-					<div class="exp__block clearfix">
-						<i class="ico ico-case"></i>
-						<div class="exp__block__content">
-							<p class="exp__block__content__title">ООО "ТКсэт" - Оператор ПК</p>
-							<p class="exp__block__content__item">Август 2014 - Август 2014</p>
+				</section>
+
+				<section class="article__section clearfix">
+					<div class="article__section__header">
+						<h2 class="article__section__header__title">Образование</h2>
+					</div>
+					<div class="article__section__content clearfix">
+						<div class="exp__block clearfix">
+							<i class="ico ico-school"></i>
+							<div class="exp__block__content">
+								<p class="exp__block__content__title">Полное среднее. Школа №3. Казахстан</p>
+								<p class="exp__block__content__item">1997 - 2008</p>
+							</div>
+						</div>
+						<div class="exp__block clearfix">
+							<i class="ico ico-graguete"></i>
+							<div class="exp__block__content">
+								<p class="exp__block__content__title">Законченное высшее. ТГТУ</p>
+								<p class="exp__block__content__item">2008 - 2013</p>
+							</div>
+						</div>
+						<div class="exp__block clearfix">
+							<i class="ico ico-diploma"></i>
+							<div class="exp__block__content">
+								<p class="exp__block__content__title">Курсы HTML Academy</p>
+								<p class="exp__block__content__item">Сентябрь 2014 - Октябрь 2014</p>
+							</div>
+						</div>
+						<div class="exp__block clearfix">
+							<i class="ico ico-diploma"></i>
+							<div class="exp__block__content">
+								<p class="exp__block__content__title">Курсы Loftschool.ru</p>
+								<p class="exp__block__content__item">Ноябрь 2016 - по настоящее время</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-
-			<section class="article__section clearfix">
-				<div class="article__section__header">
-					<h2 class="article__section__header__title">Образование</h2>
-				</div>
-				<div class="article__section__content clearfix">
-					<div class="exp__block clearfix">
-						<i class="ico ico-school"></i>
-						<div class="exp__block__content">
-							<p class="exp__block__content__title">Полное среднее. Школа №3. Казахстан</p>
-							<p class="exp__block__content__item">1997 - 2008</p>
-						</div>
-					</div>
-					<div class="exp__block clearfix">
-						<i class="ico ico-graguete"></i>
-						<div class="exp__block__content">
-							<p class="exp__block__content__title">Законченное высшее. ТГТУ</p>
-							<p class="exp__block__content__item">2008 - 2013</p>
-						</div>
-					</div>
-					<div class="exp__block clearfix">
-						<i class="ico ico-diploma"></i>
-						<div class="exp__block__content">
-							<p class="exp__block__content__title">Курсы HTML Academy</p>
-							<p class="exp__block__content__item">Сентябрь 2014 - Октябрь 2014</p>
-						</div>
-					</div>
-					<div class="exp__block clearfix">
-						<i class="ico ico-diploma"></i>
-						<div class="exp__block__content">
-							<p class="exp__block__content__title">Курсы Loftschool.ru</p>
-							<p class="exp__block__content__item">Ноябрь 2016 - по настоящее время</p>
-						</div>
-					</div>
-				</div>
-			</section>
+				</section>
+			</article>
+		</div>
+	</main>
 
 
+	//= template/footer-content.html
 
-
-		</article>
-
-	</div>
-</main>
-
-
-//= template/footer-content.html
-
-//= template/footer.html
+	//= template/footer.html
 
 
 
