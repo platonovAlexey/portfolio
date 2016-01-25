@@ -88,6 +88,7 @@ body {
 	background:#ccc url(/img/header_bg.jpg)repeat;
 	min-height: 97px;
 	position: relative;
+	margin-bottom: 36px;
 
 	&:after{
 		height: 7px;
@@ -111,9 +112,15 @@ body {
 	float: left;
 	margin-top: 10px;
 	margin-left: 10px;
+	width: 95px;
 
 	.logo__link{
 		display: block;
+
+			.logo__picture{
+				width: 100%;
+				height: auto;
+			}
 	}
 }
 
@@ -144,7 +151,7 @@ body {
 }
 
 .main-content{
-	margin: 36px 0 30px 0;
+	margin: 0px 0 30px 0;
 	position: relative;
 }
 
@@ -171,7 +178,6 @@ body {
 			background: linear-gradient(0deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
 			background-color: #f0eeed;
 			box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07), inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-			line-height: 53px;
 			&:first-child{
 				border-top-left-radius: 4px;
 				border-top-right-radius: 4px;
@@ -208,9 +214,9 @@ body {
 				font-size: 20px;
 				font-family: 'open_sanssemibold';
 				text-decoration: none;
-				padding-left: 30px;
+				padding: 15px 26px;
 				text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.35);
-				min-height: 56px;
+				word-wrap:break-word;
 
 
 				&:hover{
@@ -253,7 +259,6 @@ body {
 				text-decoration: none;
 				padding-left: 30px;
 				text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.35);
-				min-height: 56px;
 			}
 		}
 	}
@@ -263,6 +268,7 @@ body {
 .contacts{
 	position: relative;
 	max-width: 250px;
+	margin-bottom: 35px;
 	width: 100%;
 	overflow: hidden;
 	.contacts__title{
@@ -273,16 +279,14 @@ body {
 		background-image: linear-gradient(to right, rgb(220, 177, 93) 0%, rgb(244, 204, 126) 90%);
 		background-color: #e9c06f;
 		box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
-		min-height: 45px;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
-		line-height: 45px;
-		padding-left: 28px;
+		padding: 10px 27px;
 		font-size: 20px;
 		font-family: 'open_sanssemibold';
 		color: rgb(208, 152, 44);
 		text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
-		padding-right: 10px;
+		word-wrap:break-word;
 	}
 
 	.contacts__body{
@@ -954,99 +958,113 @@ body {
 		float: left;
 		width: 100%;
 		margin-bottom: 50px;
+		text-align: center;
 
-		.feedback__buttons__send{
-			float: left;
-			margin-left: 30px;
-			border-radius: 5px;
-			border-style: solid;
-			border-width: 1px;
-			border-color:  #5fdcbd;
-			background-color: #5fdcbd;
-			background: -webkit-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
-			background: -moz-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
-			background: -o-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
-			background: -ms-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
-			background: linear-gradient(0deg, #43b796 0%, #80e8cb 100%);
-			box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16);
-			font-family: 'open_sanssemibold', sans-serif;
-			color:  #1e7465;
-			font-size: 14px;
-			font-weight: 600;
-			line-height: 22px;
-			text-align: left;
-			text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-			text-align: center;
-			width: 121px;
-			height: 37px;
+			.feedback__block__send{
+				float: left;
+				padding-right: 10px;
+				width: 50%;
+				box-sizing: border-box;
 
-			&:hover{
-				border-radius: 5px;
-				border-style: solid;
-				border-width: 1px;
-				border-color:  #3aa087;
-				background-color: #3aa087;
-				background: -webkit-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
-				background: -moz-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
-				background: -o-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
-				background: -ms-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
-				background: linear-gradient(0deg, #3aa087 0%, #5fdcbd 100%);
-			}
+				.feedback__buttons__send{
+					display: inline-block;
+					border-radius: 5px;
+					border-style: solid;
+					border-width: 1px;
+					border-color:  #5fdcbd;
+					background-color: #5fdcbd;
+					background: -webkit-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+					background: -moz-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+					background: -o-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+					background: -ms-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+					background: linear-gradient(0deg, #43b796 0%, #80e8cb 100%);
+					box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16);
+					font-family: 'open_sanssemibold', sans-serif;
+					color:  #1e7465;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 22px;
+					text-align: left;
+					text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+					text-align: center;
+					max-width: 100%;
+					min-height: 37px;
+					padding: 7px 22px;
+					word-wrap:break-word;
 
-			&:active{
-				outline: none;
-			}
+				&:hover{
+					border-radius: 5px;
+					background-color: #3aa087;
+					background: -webkit-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+					background: -moz-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+					background: -o-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+					background: -ms-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+					background: linear-gradient(0deg, #3aa087 0%, #5fdcbd 100%);
+				}
 
-			&:focus{
-				outline: none;
+				&:active{
+					outline: none;
+				}
 
-			}
-		}
+				&:focus{
+					outline: none;
 
-		.feedback__buttons__clean{
-			float: right;
-			margin-right: 50px;
-			border-radius: 5px;
-			border-style: solid;
-			border-width: 1px;
-			border-color:  #c3c2c2;
-			background: -webkit-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
-			background: -moz-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
-			background: -o-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
-			background: -ms-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
-			background: linear-gradient(0deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
-			box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
-			font-family: 'open_sanssemibold', sans-serif;
-			color:  #727070;
-			font-size: 14px;
-			font-weight: 600;
-			line-height: 22px;
-			text-align: left;
-			text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-			text-align: center;
-			width: 121px;
-			height: 37px;
-
-			&:hover{
-				border-radius: 5px;
-				background: -webkit-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
-				background: -moz-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
-				background: -o-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
-				background: -ms-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
-				background: linear-gradient(0deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
-				background-color: #c2c0c0;
-			}
-
-			&:active{
-				outline: none;
-			}
-
-			&:focus{
-				outline: none;
-
+				}
 			}
 		}
 
+			.feedback__block__reset{
+				float: left;
+				width: 50%;
+				padding-left: 10px;
+				box-sizing: border-box;
+
+
+				.feedback__buttons__clean{
+					display: inline-block;
+					border-radius: 5px;
+					border-style: solid;
+					border-width: 1px;
+					border-color:  #c3c2c2;
+					background: -webkit-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+					background: -moz-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+					background: -o-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+					background: -ms-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+					background: linear-gradient(0deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+					box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
+					font-family: 'open_sanssemibold', sans-serif;
+					color:  #727070;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 22px;
+					text-align: left;
+					text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+					text-align: center;
+					max-width: 100%;
+					min-height: 37px;
+					word-wrap:break-word;
+					padding: 7px 22px;
+
+					&:hover{
+						border-radius: 5px;
+						background: -webkit-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+						background: -moz-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+						background: -o-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+						background: -ms-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+						background: linear-gradient(0deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+						background-color: #c2c0c0;
+					}
+
+					&:active{
+						outline: none;
+					}
+
+					&:focus{
+						outline: none;
+
+					}
+				}
+			}
 
 	}
 }

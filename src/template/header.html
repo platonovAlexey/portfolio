@@ -11,6 +11,126 @@
 <html>
 <!--<![endif]-->
 
+<!--[if lte IE 8]>
+<style type="text/css">
+
+	.clearfix::before,
+	.clearfix::after {
+	  content: "";
+	  display: table;
+	}
+	.clearfix::after {
+	  clear: both;
+	}
+
+	.exp__block:after{
+		clear:both;
+}
+
+header{
+	position:relative;
+}
+
+header:after{
+	content: "";
+	display: block;
+	background-color: #fff;
+	height: 7px;
+
+}
+
+.work__wrapper{
+	padding-left:18px;
+}
+
+.work__item{
+	margin-right:20px;
+}
+
+.caption{
+	background-image: url('../img/transparet-ie.png');
+	background-repeat:repeat;
+}
+
+.exp__block:after{
+	content: '';
+	background-color:#ccc;
+	height: 1px;
+	display: block;
+	width: 100%;
+	position: relative;
+	top: 20px;
+}
+
+.nav__link{
+	border-bottom:1px solid #ccc;
+}
+
+.nav__link:last-child{
+	border-bottom:0;
+}
+
+.layout_center_wrapper{
+	min-width: 1024px;
+}
+
+.layout_center_wrapper:after{
+	content:" ";
+	display: block;
+	height: 61px;
+}
+
+.footer{
+	padding-bottom:0;
+	box-sizing:border-box;
+	height:61px;
+	min-height:inherit;
+}
+
+.feedback__buttons__send:hover{
+	color:#fff;
+}
+
+body{
+	background: #506175;
+}
+
+.info__photo{
+	float: left;
+}
+
+.info__wrap{
+	float: left;
+}
+
+.info__list__item__title{
+	line-height:1.5 !important;
+}
+
+
+.info__list__title__child{
+	float:none !important;
+	display: inline-block !important;
+}
+
+.contacts__description:before{
+	position: absolute;
+    content: ' ';
+    display: block;
+    background: url(../img/spritesheet.png) -113px -7px no-repeat;
+    width: 10px;
+    height: 38px;
+    left: -25px;
+    top: 0% !important;
+}
+
+.contacts__icon{
+	top:25% !important;
+}
+
+</style>
+<![endif]-->
+
 <head lang="ru_RU">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

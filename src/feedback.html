@@ -4,7 +4,7 @@
 
 
 <main class="main-content clearfix">
-	<div class="container">
+	<div class="container clearfix">
 
 		//= template/aside-feedback.html
 
@@ -34,8 +34,13 @@
 								<input type="text" name="captcha" placeholder="Введите код" class="feedback__captcha__input">
 							</div>
 							<div class="feedback__buttons clearfix">
-								<input type="submit" class="feedback__buttons__send" name="submit" value="Отправить">
-								<input type="reset" class="feedback__buttons__clean" name="reset" value="Очистить">
+								<div class="feedback__block__send">
+									<button type="submit" class="feedback__buttons__send">Отправить</button>
+								</div>
+								<div class="feedback__block__reset">
+									<button type="reset" class="feedback__buttons__clean">Очистить</button>
+								</div>
+
 							</div>
 						</form>
 					</div>
