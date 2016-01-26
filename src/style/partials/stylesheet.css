@@ -221,3 +221,49 @@
 	height: 25px;
 	background-position: -1687px -6px;
 }
+
+.sprite {
+		background-image: url('../img/ico_soc_mobile.png');
+		background-repeat: no-repeat;
+		display: inline-block;
+	}
+	.sprite-facebook {
+		width: 69px;
+		height: 71px;
+		background-position: -5px -5px;
+	}
+	.sprite-facebook:hover {
+		width: 69px;
+		height: 71px;
+		background-position: -84px -5px;
+	}
+	.sprite-github {
+		width: 69px;
+		height: 71px;
+		background-position: -163px -5px;
+	}
+	.sprite-github:hover {
+		width: 69px;
+		height: 71px;
+		background-position: -242px -5px;
+	}
+	.sprite-twitter {
+		width: 69px;
+		height: 71px;
+		background-position: -321px -5px;
+	}
+	.sprite-twitter:hover {
+		width: 69px;
+		height: 71px;
+		background-position: -400px -5px;
+	}
+	.sprite-vk {
+		width: 69px;
+		height: 71px;
+		background-position: -479px -5px;
+	}
+	.sprite-vk:hover {
+		width: 69px;
+		height: 71px;
+		background-position: -558px -5px;
+	}
