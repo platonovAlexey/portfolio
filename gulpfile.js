@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 		cssmin = require('gulp-minify-css'),
 		imagemin = require('gulp-imagemin'),
 		pngquant = require('imagemin-pngquant'),
-		rimraf = require('gulp-rimraf'),
+		rimraf = require('rimraf'),
 		browserSync = require("browser-sync"),
 		reload = browserSync.reload;
 
