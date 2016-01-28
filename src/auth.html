@@ -1,0 +1,44 @@
+//= template/header.html
+
+<main class="main-content clearfix">
+	<div class="container clearfix">
+	<div class="auth">
+		<h1 class="auth__title">Авторизуйтесь</h1>
+		<form id="form__auth" action="/auth" class="form__auth" method="POST">
+			<div class="form__auth__email clearfix">
+				<div class="form__auth__input__block">
+					<span class="form__auth__icon">
+						<span class="ico ico-email-gray"></span>
+					</span>
+					<input type="text" name="email" placeholder="Введите Email" class="input__auth__email">
+				</div>
+			</div>
+			<div class="form__auth__password clearfix">
+				<div class="form__auth__input__block">
+					<span class="form__auth__icon">
+						<span class="ico ico-key"></span>
+					</span>
+					<input type="password" name="password" placeholder="Введите Пароль" class="input__auth__password">
+				</div>
+			</div>
+			<div class="form__auth__remember">
+				<label class="form__auth__label">
+					<input type="checkbox" name="remember" class="remember__input">
+					<span class="remember__checbox"></span>
+					Запомнить меня?
+				</label>
+			</div>
+			<div class="form__auth__button">
+				<button type="submit" class="form__auth__come">Войти</button>
+			</div>
+
+
+		</form>
+	</div>
+
+
+	</div>
+	</main>
+
+//= template/footer-content.html
+//= template/footer.html
