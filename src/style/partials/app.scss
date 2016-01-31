@@ -34,6 +34,10 @@ body textarea:required:valid {
 	float: left;
 }
 
+.hidden{
+	display: none;
+}
+
 ul{
 
 	li{
@@ -836,6 +840,177 @@ body {
 			padding: 0;
 		}
 	}
+}
+
+/*add project modal*/
+#new__project__popup{
+	display: none;
+}
+
+.modal__add__project{
+	display: block;
+}
+
+.modal__wrapper{
+	width: 366px;
+	padding: 0;
+	margin: 0 auto;
+		.modal__wrapper__title{
+			margin: 0 0 0 22px;
+			font-family: 'open_sansregular', sans-serif;
+			font-size: .75em;
+			color: #fff;
+			line-height: 2;
+		}
+		.modal__body{
+			position: relative;
+			padding: 20px;
+			background: #fbfbfa;
+			background: linear-gradient(to bottom,#fbfbfa 0,#f0eeed 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfbfa', endColorstr='#f0eeed', GradientType=0);
+			border: 1px solid #c3c3c3;
+			border-radius: 5px;
+			font-size: 14px;
+				.modal__close{
+					font-size: 18px;
+					font-weight: bold;
+					line-height: 1;
+					color: #797777;
+					text-shadow: 0 1px 0 #fff;
+					border: none;
+					background: none;
+					position: absolute;
+					right: 9px;
+					top: 5px;
+					padding: 0;
+
+					&:focus{
+						outline: none;
+					}
+				}
+				.project__form__group{
+					margin-bottom: 15px;
+					position: relative;
+						.form__input__section{
+							position: relative;
+								.project__form__input{
+									display: block;
+									position: relative;
+										.project__img__input{
+											float: left;
+											width: 84%;
+											border-right-width: 0;
+											border-top-right-radius: 0;
+											border-bottom-right-radius: 0;
+											display: table-cell;
+										}
+										.form__input__group__btn{
+											width: 1%;
+											height: 41px;
+											white-space: nowrap;
+											vertical-align: middle;
+												.form__input__button{
+													display: inline-block;
+													min-height: 39px;
+													max-width: 100%;
+													padding: 11px 22px;
+													background: #fff;
+													background: linear-gradient(to bottom,#fff 0,#fbf9f9 6%,#e9e6e4 100%);
+													filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e6e4', GradientType=0);
+													box-shadow: 0 2px 1px 0 rgba(9,9,9,.07),inset 0 -2px 3px 0 rgba(41,41,41,.05);
+													border: 1px solid #b7b7b7;
+													border-radius: 5px;
+													line-height: 1;
+													color: #727070;
+													word-wrap: break-word;
+													height: 41px;
+													border-color: #d6d5d3;
+													border-radius: 0 3px 3px 0;
+													box-shadow: none;
+
+													&:before{
+													content: "";
+													display: block;
+													background: url("../img/ico_cloud.png")no-repeat;
+													width: 27px;
+													height: 20px;
+													position: absolute;
+													top: 9px;
+													right: 14px;
+													}
+												}
+										}
+								}
+						}
+						.project__description{
+							height: 111px !important;
+							width: 100%;
+						}
+
+						.project__form__label{
+							display: block;
+							margin-bottom: 8px;
+							line-height: 1;
+						}
+						.project__input{
+							display: block;
+							width: 100%;
+							height: 41px;
+							padding: 13px 8px;
+							background: #FFF;
+							background: linear-gradient(to bottom,rgba(251,249,249,0) 0,rgba(233,231,231,1) 100%);
+							box-shadow: 0 1px 0 0 rgba(255,255,255,.35),inset 0 2px 2px 0 rgba(114,112,112,.1);
+							border: 1px solid #d6d5d3;
+							border-radius: 3px;
+							box-sizing:border-box;
+							resize: none;
+
+							&::-webkit-input-placeholder {
+								@extend .feedback__input__placeholder;
+							}
+
+							&:focus{
+								outline: #80e8cb solid 1px;
+							}
+
+						}
+
+						.project__add__button{
+							border-color: #5fdcbd;
+							background-color: #5fdcbd;
+							background: -webkit-linear-gradient(bottom,#43b796 0,#80e8cb 100%);
+							background: linear-gradient(0deg,#43b796 0,#80e8cb 100%);
+							box-shadow: 0 2px 1px 0 rgba(9,9,9,.16);
+							color: #1e7465;
+							padding: 7px 22px;
+							display: block;
+							margin: 0 auto;
+							border-style: solid;
+							border-width: 1px;
+							font-family: open_sanssemibold,sans-serif;
+							font-size: 14px;
+							line-height: 22px;
+							border-radius: 5px;
+							font-weight: 600;
+							text-shadow: 0 1px 0 rgba(255,255,255,.75);
+							text-align: center;
+							min-height: 37px;
+							word-wrap: break-word;
+							max-width: 100%;
+
+							&:hover{
+								border-radius: 5px;
+								background-color: #3aa087;
+								background: -webkit-linear-gradient(bottom,#3aa087 0,#5fdcbd 100%);
+								background: linear-gradient(0deg,#3aa087 0,#5fdcbd 100%);
+							}
+
+							&:focus{
+								outline: none;
+							}
+						}
+				}
+		}
 }
 
 

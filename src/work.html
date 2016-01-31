@@ -56,70 +56,112 @@
 							</div>
 						</div>
 						<div class="work__item work__add">
-							<a href="#add__project" class="work__add__link">
+							<a href="#" class="work__add__link" id="add__new__item">
 								<div class="icon__circle work_and_school school_1 icon__work__add"></div>
 								<p class="work__item__text">Добавить проект</p>
 							</a>
 						</div>
 
 					</div>
-					</div>
 				</div>
-			</section>
-		</article>
+			</div>
+		</section>
+	</article>
 
-	<ul class="contacts__list__mobile clearfix">
-				<li class="contacts__item">
-					<a href="mailto:kalyawe4ka@gmail.com" class="contacts__link">
-						<span class="contacts__icon">
+	<div id="new__project__popup" class="modal__add__project">
+		<div class="modal__wrapper">
+			<h4 class="modal__wrapper__title">Добавление проекта</h4>
+			<div class="modal__body">
+				<button class="modal__close b-close">x</button>
+				<form id="add__new__project" class="add__new__project">
+					<div class="server__mes error__mes"></div>
+					<div class="server__mes success__mes"></div>
+					<div class="project__form__group">
+						<label class="project__form__label" for="project__name__input">Название проекта</label>
+						<input type="text" id="project__name__input" class="project__name__input project__input" placeholder="Введите название">
+					</div>
+					<div class="project__form__group clearfix">
+						<label for="project__image" class="project__form__label">Картинка проекта</label>
+						<div class="form__input__section">
+							<input type="file" id="project__image" name="file" class="hidden"/>
+							<div class="project__form__input">
+								<input type="text" id="fake__project__image" name="image" class="project__img__input project__input"
+								placeholder="Загрузите изображение" readonly/>
+								<span class="form__input__group__btn">
+									<button id="fake__input__file" type="button" class="form__input__button"></button>
+									</span>
+								</div>
+							</div>
+							<div id="img__thumbnail" class="files"></div>
+						</div>
+						<div class="project__form__group">
+							<label class="project__form__label" for="project__url__input">URL проекта</label>
+							<input type="text" id="project__url__input" class="project__url__input project__input" placeholder="Добавьте ссылку">
+						</div>
+						<div class="project__form__group">
+							<label class="project__form__label">Описание</label>
+							<textarea class="project__input project__description" id="project__description project__input" name="description" placeholder="Пара слов"></textarea>
+						</div>
+						<div class="project__form__group">
+							<button class="project__add__button" type="submit">Добавить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<ul class="contacts__list__mobile clearfix">
+			<li class="contacts__item">
+				<a href="mailto:kalyawe4ka@gmail.com" class="contacts__link">
+					<span class="contacts__icon">
 						<span class="ico ico-email"></span>
-						</span>
-						<span class="contacts__description">
-							kalyawe4ka@gmail.com
-						</span>
-					</a>
-				</li>
-				<li class="contacts__item">
-					<a href="tel:++79069999999" class="contacts__link">
-						<span class="contacts__icon">
+					</span>
+					<span class="contacts__description">
+						kalyawe4ka@gmail.com
+					</span>
+				</a>
+			</li>
+			<li class="contacts__item">
+				<a href="tel:++79069999999" class="contacts__link">
+					<span class="contacts__icon">
 						<span class="ico ico-telephone"></span>
-						</span>
-						<span class="contacts__description">
-							+79069999999
-						</span>
-					</a>
-				</li>
-				<li class="contacts__item">
-					<a href="skype:nevil_poker" class="contacts__link">
-						<span class="contacts__icon">
+					</span>
+					<span class="contacts__description">
+						+79069999999
+					</span>
+				</a>
+			</li>
+			<li class="contacts__item">
+				<a href="skype:nevil_poker" class="contacts__link">
+					<span class="contacts__icon">
 						<span class="ico ico-skype"></span>
-						</span>
-						<span class="contacts__description">
-							nevil_poker
-						</span>
-					</a>
+					</span>
+					<span class="contacts__description">
+						nevil_poker
+					</span>
+				</a>
+			</li>
+		</ul>
+
+		<div class="social_footer clearfix">
+			<ul class="social_footer__list clearfix">
+				<li class="social_footer__item">
+					<a class="sprite sprite-facebook social_footer__link" href="https://www.facebook.com" target="_blank"></a>
+				</li>
+				<li class="social_footer__item">
+					<a class="sprite sprite-vk social_footer__link" href="https://vk.com/sovpadenie_ne_dumau" target="_blank"></a>
+				</li>
+				<li class="social_footer__item">
+					<a class="sprite sprite-twitter social_footer__link" href="https://twitter.com/" target="_blank"></a>
+				</li>
+				<li class="social_footer__item">
+					<a class="sprite sprite-github social_footer__link" href="https://github.com/platonovAlexey" target="_blank"></a>
 				</li>
 			</ul>
-
-			<div class="social_footer clearfix">
-				<ul class="social_footer__list clearfix">
-					<li class="social_footer__item">
-						<a class="sprite sprite-facebook social_footer__link" href="https://www.facebook.com" target="_blank"></a>
-					</li>
-					<li class="social_footer__item">
-						<a class="sprite sprite-vk social_footer__link" href="https://vk.com/sovpadenie_ne_dumau" target="_blank"></a>
-					</li>
-					<li class="social_footer__item">
-						<a class="sprite sprite-twitter social_footer__link" href="https://twitter.com/" target="_blank"></a>
-					</li>
-					<li class="social_footer__item">
-						<a class="sprite sprite-github social_footer__link" href="https://github.com/platonovAlexey" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-</main>
+		</div>
+	</main>
 
 
-//= template/footer-content.html
+	//= template/footer-content.html
 
-//= template/footer.html
+	//= template/footer.html

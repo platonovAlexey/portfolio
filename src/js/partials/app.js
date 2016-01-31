@@ -6,3 +6,10 @@ $(".mob__nav").on('click',function(){
         $(".nav__header").addClass('show__nav__header');
       }
     });
+
+$("#add__new__item").on('click', function(){
+	$('#new__project__popup').bPopup({
+		speed: 650,
+		transition: 'slideDown'
+	})
+});

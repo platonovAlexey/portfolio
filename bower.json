@@ -19,6 +19,7 @@
     "jquery": "1.12",
     "normalize-css": "normalize.css#~3.0.3",
     "html5shiv": "~3.7.3",
-    "placeholders": "~4.0.1"
+    "placeholders": "~4.0.1",
+    "bPopup": "bpopup#~0.11.0"
   }
 }
