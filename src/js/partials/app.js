@@ -8,7 +8,7 @@ $('#fake__input__file').on('click', _fakeInputFile);
 $('#feedback__buttons__clean').on('click', _clearForm);
 
 
- $('#feedback__form, #form__auth,#add__new__project').validate({
+$('#feedback__form, #form__auth,#add__new__project').validate({
 		rules: {
 			name : {
 				required : true,
@@ -69,10 +69,10 @@ $('#feedback__buttons__clean').on('click', _clearForm);
 				required: 'Пожалуйста загрузите изображение'
 			},
 			url : {
-				required: 'Пожалуйства введите адрес проекта'
+				required: 'Пожалуйста введите адрес проекта'
 			},
 			description : {
-				required: 'Пожалуйства введите описание проекта.'
+				required: 'Пожалуйста введите описание проекта.'
 			}
 		}
 });
