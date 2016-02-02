@@ -977,6 +977,30 @@ body {
 
 						}
 
+						.project__description{
+							display: block;
+							width: 100%;
+							height: 41px;
+							padding: 13px 8px;
+							background: #FFF;
+							background: linear-gradient(to bottom,rgba(251,249,249,0) 0,rgba(233,231,231,1) 100%);
+							box-shadow: 0 1px 0 0 rgba(255,255,255,.35),inset 0 2px 2px 0 rgba(114,112,112,.1);
+							border: 1px solid #d6d5d3;
+							border-radius: 3px;
+							box-sizing:border-box;
+							resize: none;
+
+							&::-webkit-input-placeholder {
+								@extend .feedback__input__placeholder;
+							}
+
+							&:focus{
+								box-shadow: 0 0 3px 1px rgba(214,213,211,.8),inset 0 0px 1px 0 rgba(114,112,112,.2);
+							border: 1px solid #d6d5d3;
+							outline: 0;
+							}
+						}
+
 						.project__add__button{
 							border-color: #5fdcbd;
 							background-color: #5fdcbd;
@@ -1311,7 +1335,7 @@ label#name-error {
 		right: -7px;
 		background: url(../img/arr-red.png) no-repeat;
 		top: 20px;
-		transform: scale(-1,1) translateY(-50%)
+		transform: scale(-1,1) translateY(-50%);
 	}
 }
 
@@ -1364,6 +1388,62 @@ label#captcha-error{
 		background: url(../img/arr-red.png) no-repeat;
 		top: 15px;
 	}
+}
+
+.auth .form__auth .form__auth__email .form__auth__input__block .input__auth__email.error, .auth .form__auth .form__auth__password .form__auth__input__block .input__auth__password.error, .input__auth__email.error{
+	box-shadow: 0 0 2px 1px #e0ad9a;
+}
+
+.form__auth label#email-error{
+	position: absolute;
+	right: -164px;
+	top: -12px;
+}
+
+.form__auth label#password-error{
+	position: absolute;
+	left: -164px;
+	top: -12px;
+	&:before{
+		content: "";
+		width: 7px;
+		height: 12px;
+		background: url(../img/arr-red.png) no-repeat;
+		position: absolute;
+		display: block;
+		right: -7px;
+		top: 20px;
+		transform: scale(-1,1) translateY(-50%);
+	}
+}
+
+.modal__wrapper .modal__body .project__form__group .project__input.error{
+	box-shadow: 0 0 2px 1px #e0ad9a;
+}
+
+label#project__name__input-error,label#fake__project__image-error,label#project__url__input-error,label#project__description-error {
+		position: absolute;
+		left: -168px;
+		top: 7px;
+		&:before{
+			content: "";
+			width: 7px;
+			height: 12px;
+			background: url(../img/arr-red.png) no-repeat;
+			position: absolute;
+			display: block;
+			right: -7px;
+			top: 20px;
+			transform: scale(-1,1) translateY(-50%);
+		}
+}
+
+label#fake__project__image-error{
+	top: -10px;
+}
+
+label#project__description-error{
+	top: 40px;
 }
 
 /*Auth page*/
@@ -1796,19 +1876,23 @@ label#captcha-error{
 		max-width: 200px;
 	}
 
-	label#name-error,label#email-error,label#comment-error,label#captcha-error{
+	.add__new__project label#project__description-error,.add__new__project label#project__url__input-error,.add__new__project label#fake__project__image-error,.add__new__project label#project__name__input-error,.form__auth label#email-error,.form__auth label#password-error,label#name-error,label#email-error,label#comment-error,label#captcha-error{
 		position: relative;
 		left: 0;
 		right: 0;
 		top: 0;
+		padding: 0;
 		&:before{
 			display: none;
 		}
 	}
 
-	label#captcha-error{
+
+	label#captcha-error,label#fake__project__image-error{
 		float: left;
 	}
+
+
 }
 
 @media screen and (max-width: 760px){

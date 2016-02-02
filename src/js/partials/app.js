@@ -8,7 +8,7 @@ $('#fake__input__file').on('click', _fakeInputFile);
 $('#feedback__buttons__clean').on('click', _clearForm);
 
 
- $('#feedback__form').validate({
+ $('#feedback__form, #form__auth,#add__new__project').validate({
 		rules: {
 			name : {
 				required : true,
@@ -16,7 +16,6 @@ $('#feedback__buttons__clean').on('click', _clearForm);
 			},
 			email : {
 				required : true,
-				minlength : 5,
 				email : true
 			},
 			comment : {
@@ -24,6 +23,23 @@ $('#feedback__buttons__clean').on('click', _clearForm);
 			},
 			captcha : {
 				required : true
+			},
+			password : {
+				required : true,
+				minlength : 6
+			},
+			name__project : {
+				required : true,
+				minlength : 3,
+			},
+			image__project : {
+				required: true
+			},
+			url : {
+				required: true
+			},
+			description : {
+				required: true
 			}
 		},
 		messages: {
@@ -33,7 +49,6 @@ $('#feedback__buttons__clean').on('click', _clearForm);
 			},
 			email: {
 				required: "Пожалуйста введите ваш Email",
-				minlength: "Ваш email должен быть больше 5 символов",
 				email: "Введите корректный email"
 			},
 			comment: {
@@ -41,6 +56,23 @@ $('#feedback__buttons__clean').on('click', _clearForm);
 			},
 			captcha : {
 				required : "Пожалуйста введите код с картинки"
+			},
+			password : {
+				required : "Пожалуйста введите пароль",
+				minlength: "Ваш пароль должен быть больше 6 символов"
+			},
+			name__project : {
+				required: 'Пожалуйста введите название проекта',
+				minlength: 'Название не может состоять меньше чем из 3 букв'
+			},
+			image__project : {
+				required: 'Пожалуйста загрузите изображение'
+			},
+			url : {
+				required: 'Пожалуйства введите адрес проекта'
+			},
+			description : {
+				required: 'Пожалуйства введите описание проекта.'
 			}
 		}
 });
@@ -51,9 +83,18 @@ $('#feedback__buttons__clean').on('click', _clearForm);
 /*Очистка инпутов и лейблов*/
 var _clearForm = function(){
 	console.log('donee');
-	if ($('.form__input').hasClass('error')){
+
+	$(".form").find('.error').removeClass('error');
+	$("label[id]").empty().css('display','none');
+
+
+	/*if ($('.form').find(".error")){
+		$('.form').removeClass('error');
+	};*/
+
+	/*if ($('.form__input').hasClass('error')){
 		$('.form__input').removeClass('error');
-	};
+	};*/
 }
 
 /*Адаптивное меню*/
