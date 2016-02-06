@@ -15,7 +15,11 @@
 				</div>
 				<div class="article__section__content clearfix">
 					<div class="feedback__wrap clearfix">
-						<form action="/" method="POST" name="form__feedback" class="feedback__form form clearfix" id="feedback__form">
+						<form method="POST" name="form__feedback" class="feedback__form form clearfix" id="feedback__form">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="My Site Portfolio">
+						<input type="hidden" name="admin_email" value="kalyawe4ka@gmail.com">
+						<!-- END Hidden Required Fields -->
 							<div class="feedback__name">
 								<label class="feedback__name__label">Имя</label>
 								<input type="text" name="name" placeholder="Как к Вам обращаться" class="feedback__name__input form__input">
@@ -28,13 +32,13 @@
 								<label class="feedback__textarea__label">Сообщение</label>
 								<textarea class="feedback__textarea form__input" placeholder="Кратко, в чем суть" name="comment" cols="30" rows="10"></textarea>
 							</div>
-							<div class="feedback__captcha__wrap">
+							<!-- <div class="feedback__captcha__wrap">
 								<label class="feedback__captcha__label">Введите код, указанный на картинке</label>
 								<div class="captcha__block">
 									<img src="img/code.png">
 								</div>
 								<input type="text" name="captcha" placeholder="Введите код" class="feedback__captcha__input form__input">
-							</div>
+							</div> -->
 							<div class="feedback__buttons clearfix">
 								<div class="feedback__block__send">
 									<button value="submit" type="submit" class="feedback__buttons__send">Отправить</button>

@@ -6,9 +6,10 @@ $(".mob__nav").on('click', _adaptiveMenu);
 $('#fake__project__image').on('click', _fakeInput);
 $('#fake__input__file').on('click', _fakeInputFile);
 $('#feedback__buttons__clean').on('click', _clearForm);
+$('#add__new__project').on('submit', _addProject);
 
 
-$('#feedback__form, #form__auth,#add__new__project').validate({
+$('#feedback__form, #form__auth, #add__new__project').validate({
 		rules: {
 			name : {
 				required : true,
@@ -36,10 +37,12 @@ $('#feedback__form, #form__auth,#add__new__project').validate({
 				required: true
 			},
 			url : {
-				required: true
+				required: true,
+				minlength : 4
 			},
 			description : {
-				required: true
+				required: true,
+				minlength : 6
 			}
 		},
 		messages: {
@@ -69,14 +72,15 @@ $('#feedback__form, #form__auth,#add__new__project').validate({
 				required: 'Пожалуйста загрузите изображение'
 			},
 			url : {
-				required: 'Пожалуйста введите адрес проекта'
+				required: 'Пожалуйста введите адрес проекта',
+				minlength: 'Пожалуйста вводите адрес через http'
 			},
 			description : {
-				required: 'Пожалуйста введите описание проекта.'
+				required: 'Пожалуйста введите описание проекта.',
+				minlength: 'Пожалуйста опишите проект'
 			}
 		}
 });
-
 
 });
 
@@ -106,14 +110,6 @@ var _adaptiveMenu = function(){
 	}
 };
 
-/*Открытие модального окна*/
-var _showModal = function(){
-	$('#new__project__popup').bPopup({
-		speed: 650,
-		transition: 'slideDown'
-	})
-};
-
 /*нажатие на фейковый инпут - открывает окно*/
 var _fakeInput = function(){
 	$('#project__image').trigger('click');
@@ -124,5 +120,98 @@ var _fakeInputFile = function(){
 	$('#project__image').trigger('click');
 };
 
+/*Открытие модального окна*/
+var _showModal = function(e){
+		e.preventDefault();
+
+var divPopup = $('#new__project__popup');
+		form = divPopup.find ('.form');
+
+		divPopup.bPopup({
+		speed: 650,
+		transition: 'slideDown',
+		onClose:function(){
+			divPopup.find('.server-mes').text(' ').hide();
+		}
+	})
+};
+
+/*Добавление проекта*/
+var _addProject = function(e){
+	console.log('добавление проекта');
+	e.preventDefault();
 
 
+//объявляем переменные
+	var form = $(this),
+			url = 'add_project.php',
+			myServerGiveMeAnAnswer = _ajaxForm(form, url);
+
+
+	console.log(data);
+
+//запрос на сервер
+
+	myServerGiveMeAnAnswer.done(function(ans){
+		console.log(ans);
+
+		var successBox = form.find('.success-mes'),
+				errorBox = form.find('.error-mes');
+
+		if(ans.status === 'OK'){
+			console.log(ans.text);
+			errorBox.hide();
+			successBox.text(ans.text).show();
+		}else{
+			console.log(ans.text);
+			successBox.hide();
+			errorBox.text(ans.text).show();
+		}
+	})
+
+};
+
+/*Универсальная функция
+Для ее работы используется
+@form - форма
+@url - адрес php файла, к которому мы обращаемся
+1. собирает данные из формы
+2. проверет форму
+3. делает запрос на сервер и возвращает ответ
+
+*/
+var _ajaxForm = function(form, url){
+
+	//if(!valid) return false;
+
+	data = form.serialize();
+
+	var result = $.ajax({
+		url: url,
+		type: 'POST',
+		dataType: 'json',
+		data: data,
+	}).fail(function(ans){
+		console.log('Проблемы в PHP');
+		form.find('.error-mes').text('На сервере произошла ошибка').show();
+	});
+
+	return result;
+
+};
+
+/*Универсальный PHP скрипт обратной связи*/
+$('#feedback__form').submit(function(){
+	var th = $(this);
+	$.ajax({
+		type:'POST',
+		url:'mail.php',
+		data:th.serialize(),
+	}).done(function(){
+		console.log('Отправка формы');
+		setTimeout(function(){
+			th.trigger('reset');
+		},1000);
+	});
+	return false;
+});
