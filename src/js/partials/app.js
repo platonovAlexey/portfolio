@@ -35,11 +35,12 @@ $('#feedback__form, #form__auth, #add__new__project').validate({
 				minlength : 3,
 			},
 			image__project : {
-				required: true
+				required: true,
+				accept: "images/*"
 			},
 			url : {
 				required: true,
-				minlength : 4
+				url: true
 			},
 			description : {
 				required: true,
@@ -70,11 +71,12 @@ $('#feedback__form, #form__auth, #add__new__project').validate({
 				minlength: 'Название не может состоять меньше чем из 3 букв'
 			},
 			image__project : {
-				required: 'Пожалуйста загрузите изображение'
+				required: 'Пожалуйста загрузите изображение',
+				accept:'Пожалуйста загрузите в формате jpg'
 			},
 			url : {
 				required: 'Пожалуйста введите адрес проекта',
-				minlength: 'Пожалуйста вводите адрес через http'
+				url: 'Пожалуйста вводите адрес через http'
 			},
 			description : {
 				required: 'Пожалуйста введите описание проекта.',
@@ -133,6 +135,8 @@ var divPopup = $('#new__project__popup');
 		transition: 'slideDown',
 		onClose:function(){
 			divPopup.find('.server-mes').text(' ').hide();
+			divPopup.find('.error').removeClass('error');
+			$("label[id]").empty().css('display','none');
 		}
 	})
 };
@@ -208,12 +212,12 @@ var _feedForm = function(e){
 	var feedForm = $('#feedback__form'),
 			feedInput = feedForm.find('.form__input');
 
-  if((feedInput).val() == ''){
-  	console.log("Заполните поля!");
-  }else{
+	if((feedInput).val() == ''){
+		console.log("Заполните поля!");
+	}else{
 		var th = $(this);
-  	$.ajax({
-  		type:'POST',
+	$.ajax({
+		type:'POST',
 			url:'mail.php',
 			data:th.serialize(),
 		}).done(function(){
@@ -225,3 +229,4 @@ var _feedForm = function(e){
 	};
 	return false;
 };
+
