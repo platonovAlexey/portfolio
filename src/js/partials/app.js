@@ -7,6 +7,7 @@ $('#fake__project__image').on('click', _fakeInput);
 $('#fake__input__file').on('click', _fakeInputFile);
 $('#feedback__buttons__clean').on('click', _clearForm);
 $('#add__new__project').on('submit', _addProject);
+$('#feedback__form').on('submit', _feedForm);
 
 
 $('#feedback__form, #form__auth, #add__new__project').validate({
@@ -200,18 +201,27 @@ var _ajaxForm = function(form, url){
 
 };
 
-/*Универсальный PHP скрипт обратной связи*/
-$('#feedback__form').submit(function(){
-	var th = $(this);
-	$.ajax({
-		type:'POST',
-		url:'mail.php',
-		data:th.serialize(),
-	}).done(function(){
-		console.log('Отправка формы');
-		setTimeout(function(){
-			th.trigger('reset');
-		},1000);
-	});
+// /*Универсальный PHP скрипт обратной связи*/
+var _feedForm = function(e){
+	e.preventDefault();
+	console.log('Отправка!');
+	var feedForm = $('#feedback__form'),
+			feedInput = feedForm.find('.form__input');
+
+  if((feedInput).val() == ''){
+  	console.log("Заполните поля!");
+  }else{
+		var th = $(this);
+  	$.ajax({
+  		type:'POST',
+			url:'mail.php',
+			data:th.serialize(),
+		}).done(function(){
+				console.log('Отправка формы');
+				setTimeout(function(){
+				th.trigger('reset');
+				},2000);
+				});
+	};
 	return false;
-});
+};
