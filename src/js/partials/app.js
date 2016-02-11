@@ -1,15 +1,6 @@
 $(document).ready(function(){
 console.log("in app.js");
 
-$('#add__new__item').on('click', _showModal);
-$(".mob__nav").on('click', _adaptiveMenu);
-$('#fake__project__image').on('click', _fakeInput);
-$('#fake__input__file').on('click', _fakeInputFile);
-$('#feedback__buttons__clean').on('click', _clearForm);
-$('#add__new__project').on('submit', _addProject);
-$('#feedback__form').on('submit', _feedForm);
-
-
 $('#feedback__form, #form__auth, #add__new__project').validate({
 		rules: {
 			name : {
@@ -28,7 +19,7 @@ $('#feedback__form, #form__auth, #add__new__project').validate({
 			},
 			password : {
 				required : true,
-				minlength : 6
+				minlength : 5
 			},
 			name__project : {
 				required : true,
@@ -85,7 +76,6 @@ $('#feedback__form, #form__auth, #add__new__project').validate({
 		}
 });
 
-});
 
 /*Очистка инпутов и лейблов*/
 var _clearForm = function(){
@@ -230,3 +220,12 @@ var _feedForm = function(e){
 	return false;
 };
 
+$('#add__new__item').on('click', _showModal);
+$(".mob__nav").on('click', _adaptiveMenu);
+$('#fake__project__image').on('click', _fakeInput);
+$('#fake__input__file').on('click', _fakeInputFile);
+$('#feedback__buttons__clean').on('click', _clearForm);
+$('#add__new__project').on('submit', _addProject);
+$('#feedback__form').on('submit', _feedForm);
+
+});

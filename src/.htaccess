@@ -1,0 +1,18 @@
+# Кодировка
+AddDefaultCharset UTF-8
+
+# Закрываем файлы от просмотра
+#IndexIgnore *.png *.php
+
+# Закрываем Директории
+#Options -Indexes
+
+# Индексный файл
+#DirectoryIndex no-index.php
+
+# 404 Страница
+#ErrorDocument 404 /404.html
+
+# Отображение ошибок
+php_value display_errors 1
+
